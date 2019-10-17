@@ -298,7 +298,7 @@ var registerVisitor = function (req, res, page) {
 
     var vandalytics = [];
 
-    if (results.length > 0) {
+    if (results && results.length > 0) {
       var vandalytic = results[0];
 
       vandalytic.timestamps.push(Date.now());
