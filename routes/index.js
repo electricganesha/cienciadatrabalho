@@ -23,7 +23,7 @@ router.get('/', function (req, res) {
 
   registerVisitor(req, res, "landing");
 
-  var random = Math.floor(Math.random() * 5) + 1;
+  var random = Math.floor(Math.random() * 6) + 1;
 
   switch (random) {
     case (1):
@@ -40,6 +40,9 @@ router.get('/', function (req, res) {
       break;
     case (5):
       randomStory = "/uploads/stories/PEDRO.html";
+      break;
+    case (6):
+      randomStory = "/uploads/stories/TIAGO.html";
       break;
   }
 
