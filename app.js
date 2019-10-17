@@ -20,7 +20,7 @@ app.set('view engine', 'ejs');
 var env = process.env.NODE_ENV = process.env.NODE_ENV || 'development',
 envConfig = require('./server/env')[env];
 
-mongoose.connect(envConfig.db);
+mongoose.connect(envConfig.db, {useNewUrlParser: true});
 
 app.use(favicon());
 app.use(logger('dev'));

@@ -22,6 +22,4 @@ services:
     links:
       - mongo
     environment:
-      CDT_MONGODB_URI: mongodb://mongo/cienciadatrabalho
-      CDT_MONGODB_USER: science
-      CDT_MONGODB_PASSWORD: takestime
+      CDT_MONGODB_URI: mongodb://science:takestime@mongo:27017/cienciadatrabalho
